@@ -1,13 +1,13 @@
 add_newline = true
 command_timeout = 200
-format = "[$directory$git_branch$git_status]($style)$character"
+format = "[$os$directory$git_branch$git_status]($style)$character"
 
 [character]
 error_symbol = "[✗](bold cyan)"
 success_symbol = "[❯](bold cyan)"
 
 [directory]
-truncation_length = 2
+truncation_length = 3
 truncation_symbol = "…/"
 repo_root_style = "bold cyan"
 repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
@@ -30,3 +30,41 @@ stashed    = ""
 staged     = ""
 renamed    = ""
 deleted    = ""
+
+[os]
+format = '[$symbol ]($style)'
+disabled = false
+
+[os.symbols]
+Alpine = ''
+Amazon = ''
+Android = ''
+Arch = ''
+CentOS = ''
+Debian = ''
+EndeavourOS = ''
+Fedora = ''
+FreeBSD = ''
+Garuda = ''
+Gentoo = ''
+Linux = ''
+Macos = ''
+Manjaro = ''
+Mariner = ''
+Mint = ''
+NetBSD = ''
+NixOS = ''
+OpenBSD = ''
+OpenCloudOS = ''
+openEuler = ''
+openSUSE = ''
+OracleLinux = '⊂⊃'
+Pop = ''
+Raspbian = ''
+Redhat = ''
+RedHatEnterprise = ''
+Solus = ''
+SUSE = ''
+Ubuntu = ''
+Unknown = ''
+Windows = ''
