@@ -2,4 +2,4 @@
 
 [ -d ~/.config ] || mkdir ~/.config
 
-ln -sf $(pwd)/starship.toml ~/.config/starship.toml
+ln -sf "$(pwd)/starship.toml" ~/.config/starship.toml
